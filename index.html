@@ -10,37 +10,73 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 	</head>
 
-		
+		<!-- Fond noir et texte en blanc -->
 	<body style="background-color:#000;" class="text-white"> 
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	<!-- Menu avec boutons pour appuyer sur la page -->
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">  	
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><B>Quentin Lo Gioco</B></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
 			<div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item mx-2">
-						<a class="nav-link active" aria-current="page" href="#mon_parcours">Mon parcours</a>
+						<a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
 					</li>
 					<li class="nav-item mx-3">
-						<a class="nav-link"  href="#">Features</a>
+						<a class="nav-link"  aria-current="page" href="#mon_parcours">Mon parcours</a>
+					</li>
+					<li class="nav-item mx-3">
+						<a class="nav-link"  aria-current="page" href="#diplomes_formations">Diplômes et Formations</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
+						<a class="nav-link" aria-current="page" href="#passions">Passions</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Me contacter </a>
+						<a class="nav-link" aria-current="page" href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-	</nav>
-	<div class="container-fluid ms-3 mt-5">
-			
-		<h1 class="text-start" style="font-weight: bold" >Bonjour, <br> je suis Quentin <br>  </h1> <span> 
-		<p>& je suis en terminal STI2D <br>avec l'option SIN <br> spécialité Système d'Information et Numérique </p>
+	</nav>		<!-- colonne pour mettre le texte de présentation + image en face de moi -->
+	<div class="container-fluid mt-5">
+		<div class="row">
+			<div class="col-4 mx-5" id="accueil">
+				<h1 class="row" style="font-weight: bold" >Bonjour, <br>je suis Quentin <br>  </h1> 
+				<p class="row">& je suis en terminal STI2D <br>avec l'option SIN : <br> spécialités Système d'Information et Numérique <br> et mathématique physique chimie </p>
+			</div>
+				<div class="col-7">
+					<img src="img/photo cv1.jpg" class="img-fluid img-thumbnail rounded float-end" alt="image de Quentin"/> 
+				</div>
+		</div>
 	</div>
-		 <div>
-			<img src="img/photo cv1.jpg" class="img-fluid rounded float-end" alt="image de Quentin"/>
+		<div id="mon_parcours"> 
+			<h2>Mon parcours</h2>
+			<ul>
+				<li> En primaire j'était à l'école de Chassagny (Beauvallon) : La Rose des Vents</li>
+				<li> Au collège j'étais à Soucieu en Jarrest : La Perrière </li>
+				<li> Stage de 3ème dans l'Opérateur Informatique et & Telecom (ENEDIS/GRDF)<br>
+				<a href="stage_3eme.pdf" target="_blank">Voici ma présentation du stage de 3ème</a>
+				<li> Au lycée j'étais à Givors : Lycée Polyvalent Aragon-Picasso <br> En 1ère je suis passé danbs la filière technologique (STI2D) et en Terminal j'ai choisi l'option SIN car je voudrais faire mes études supérieurs dans l'informatique donc comme ca j'aurai des bases pour la suite de mes études</li>
+				<li> Pour les langues : <br>Langue maternelle : Français <span class="mx-5">Anglais </span> <span>Italien </span></li>
+				<li> Association Secouristes Français Croix Blanche pendant 2ans (2018-2019) en tant que mini secouristes avec passage de la formation PSC1</li>
+			</ul>
+		</div>
+			<div id="diplomes_formations" class="mt-5"> 
+				<h2> Diplômes</h2>
+					<p> ASSR1 <br> ASSR2 <br>Brevet mention bien <br> Bac STI2D ?  </p>
+				<h2> Formations</h2>
+					<p> PSC1 en 2018<br> Code de la route en 2023<br> Conduite accompagnée en 2023 puis passage du permis en 2024</p>
+			</div>
+				<div id="passions"" class="mt-5"> 
+				<h2>Passions</h2>
+					<p>moto cross photos a mettre de moi sur la moto 
+						partie en voyage en Grèce avec coucher de soleil</p>
+				</div>
+		<div id="contact" class="mt-5"> 
+			<h2>Contact</h2>
+				<p>Adresse <br>50 impasse des Joncs, Chassagny 69700 Beauvallon</p>
+				<p> E-Mail <br> quentinlogioco@gmail.com</p>
+				<p> Telephone <br> 06 51 11 63 19</p>
 		</div>
 	</body>
 </html>
