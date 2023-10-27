@@ -13,20 +13,23 @@
 		<!-- Fond noir et texte en blanc -->
 	<body style="background-color:#000;" class="text-white"> 
 	<!-- Menu avec boutons pour appuyer sur la page -->
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">  
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar fixed-top" id="navbar-example2">  
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><B>Quentin Lo Gioco</B></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
 			<div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav nav-pills">
 					<li class="nav-item mx-2">
-						<a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+						<a class="nav-link" aria-current="page" href="#accueil">Accueil</a>
 					</li>
 					<li class="nav-item mx-2">
 						<a class="nav-link"  aria-current="page" href="#mon_parcours">Mon parcours</a>
 					</li>
 					<li class="nav-item mx-2">
-						<a class="nav-link"  aria-current="page" href="#diplomes_formations">Diplômes et Formations</a>
+						<a class="nav-link"  aria-current="page" href="#diplomes">Diplômes</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link"  aria-current="page" href="#formations">Formations</a>
 					</li>
 					<li class="nav-item mx-2">
 						<a class="nav-link" aria-current="page" href="#passions">Passions</a>
@@ -38,6 +41,7 @@
 			</div>
 		</div>
 	</nav>		<!-- colonne pour mettre le texte de présentation + image en face de moi -->
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-p-3 rounded-2" tabindex="0">
 	<div class="container-fluid mt-5">
 		<div class="row">
 			<div class="col-4 sm" id="accueil">
@@ -59,7 +63,7 @@
 					<p>En primaire j'étais à l'école de Chassagny : La Rose des Vents</p> 
 					<!-- Button trigger modal -->
 					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ecole_la_rose_des_vents">
-						<p>Localisation de l'école</p>
+						Localisation de l'école
 					</button>
 					
 					<!-- Modal -->
@@ -85,7 +89,7 @@
 					<p>Au collège j'étais à Soucieu en Jarrest : <a href="https://laperriere-soucieuenjarrest.ent.auvergnerhonealpes.fr/" target="_blank">La Perrière</a></p>
 					<!-- Button trigger modal -->
 					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#college_la_perriere">
-						<p>Localisation du collège</p>
+						Localisation du collège
 					</button>
 
 					<!-- Modal -->
@@ -111,7 +115,7 @@
 					
 										<!-- Button trigger modal -->
 					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#stage_3eme">
-						<p>Localisation du stage de 3ème</p>
+						Localisation du stage de 3ème
 					</button>
 
 					<!-- Modal -->
@@ -131,7 +135,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="stage_3eme.pdf" target="_blank">Voici ma présentation du stage de 3ème</a> <br>
+					<a href="fichier/stage_3eme.pdf" target="_blank">Voici ma présentation du stage de 3ème</a> <br>
 					<img src="img/oit_stage1.png" class="img-fluid img-thumbnail" alt="OIT stage 3eme"/> 
 				</div>
 				<div class="col-6 "> 
@@ -139,7 +143,7 @@
 							
 							<!-- Button trigger modal -->
 					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lycee_givors">
-						<p>Localisation du lycée</p>
+						Localisation du lycée
 					</button>
 
 					<!-- Modal -->
@@ -187,7 +191,7 @@
    		</tbody>
 	</table>
 		
-	<div id="diplomes_formations" class="mt-5"> 
+	<div id="diplomes" class="mt-5"> 
 		<h2 class="m-4 bi bi-mortarboard-fill"> Diplômes</h2>
 			<div class="container-fluid mt-5">
 				<div class="row">
@@ -220,42 +224,208 @@
 						<br><br><br><br><br><br>
 						<p class="fs-5 text-center">Est ce que j'aurai mon bac de STI2D à la fin de cette année ? <br> Par rapport au contrôle continue c'est déjà bien parti car l'année dernière j'avais eu 16,34 de moyenne générale de l'année avec 16,71 de moyenne dans la matière Ingénieurie et Développelent Durable, 15,53 en Mathématiques et 17,04 en Physique-Chimie.</p>
 					</div>	
-					<br><br>
-						<h2 class="m-6"> Formations</h2>
-						<div class="col-3">
-							<img src="img/logo_secouristes1.1.jpg" class="img-fluid img-thumbnail" alt="logo secouristes asso"/>
-						</div>
-						<div class="col-4">
-						<img src="img/poste_de_secours.jpeg" class="img-fluid img-thumbnail" alt="poste de secours"/><br><br>
-						</div>
-					<div class="col-5">
-						<br><br><br><br>
-						<p class="fs-5 text-center"> Début 2018, je suis rentré dans une association de secouristes pour passer mon PSC1 en tant que mini secouriste et je suis resté 2 ans dans cette associationen faisant des postes de secours, les défilés ect</p><br> 
-					</div>		
-						<div class="col-4">
-						<img src="img/psc1_1.png" class="img-fluid img-thumbnail" alt="psc1"/> <br><br>
-						<img src="img/psc1.jpg" class="img-fluid img-thumbnail" alt="psc1"/><br><br>
-						</div>
-						<p> PSC1 en 2018 avec association secouristes françaiscroix blanche<br> Code de la route en 2023<br> Conduite accompagnée en 2023 puis passage du permis en 2024</p>
 					
+					<br><br>
+					<h2 id="formations" class="mt-5 m-4"> Formations</h2>
+					<div class="col-3">
+							<img src="img/logo_secouristes1.1.jpg" class="img-fluid img-thumbnail" alt="logo secouristes asso"/>
+					</div>
+					<div class="col-4">
+						<img src="img/poste_de_secours.jpeg" class="img-fluid img-thumbnail" alt="poste de secours"/><br><br>
+					</div>
+					<div class="col-5 fs-3">
+						<br><br><br><br>
+						<p class="fs-5 text-center"> Début 2018, je suis rentré dans une association de secouristes pour passer mon PSC1 en tant que mini secouriste et je suis resté 2 ans dans cette association en faisant des postes de secours, les défilés, les cérémonies ect. Ce lien est le <a href="https://www.croixblanche69.org/associations-du-rhone/saint-genis-laval/" target="_blank">site de l'association de Saint-Genis-Laval</a> qui permettra soit de vous inscrire à une formation soit même à vous inscrire dans cette assocation pour sauver des vies dans différents postes de secours.</p><br> 
+					</div>		
+					<div class="col-3">
+						<img src="img/psc1.jpg" class="img-fluid img-thumbnail" alt="psc1"/> 
+					</div>	
+					<div class="col-3">
+						<img src="img/psc1_1.png" class="img-fluid img-thumbnail" alt="psc1"/>
+					</div>	
+					<div class="col-6">
+						<br><br><br>
+						<p class="fs-5 text-center"> J'ai passé le PSC1 fin de 2018 car on a un an de formations avec des regroupements de plusieurs weekend durant l'année et là ce que je vais faire c'est de me faire recycler car cela fait trop longtemps que je n'ai pas pratiqué donc je suis moins performant qu'avant. Faites la même chose que moi, passer votre PSC1 car si jamais quelqu'un de votre famille a un problème alors vous pourriez l'aider et sauver sa vie !</p>
+					</div>
+					<div class="col-2">
+						<br>
+						<img src="img/code_de_la_route.png" class="img-fluid img-thumbnail" alt="image code de la route"/>
+					</div>
+					<div class="col-10">
+						<br><br><br><br>
+						<p class="fs-5"> J'ai passé mon Code de la route en 2023, après j'ai passé mes 20h de conduite pour apprendre à conduire et là depuis le 15 mars je suis en conduite accompagnée, je dois faire 3 000km en une année donc je passe mon permis en mars 2024 si tout va bien.<br>
+							<a href="fichier/resultat_code_de_la_route.pdf" target="_blank">Résultat du code de la route</a></p> <br>
+					</div>
 				</div>
 			</div>
 	</div>
 	<div id="passions" class="mt-5"> 
-		<h2>Passions</h2>
-			<p>moto cross photos a mettre de moi sur la moto partie en voyage en Grèce avec coucher de soleil parler de la plongée sous marine </p>
-	</div>
-	<div id="contact" class="mt-5"> 
-		<h2>Contact</h2>
-			<p class="bi bi-house-door"> Adresse<br>50 impasse des Joncs, Chassagny 69700 Beauvallon</p>
-			<p> E-Mail <br> quentinlogioco@gmail.com</p>
-			<p> Telephone <br> 06 51 11 63 19</p>
-			<p> contact the author of this page :</p> 
-		<address> 
-			<a href="mailto:quentinlogioco@gmail.com">quentinlogioco@gmail.com</a><br>
-			<a href="tel:+33651116319">06 51 11 63 19</a>
-		</address>
-	</div>
+		<h2 class="mt-5 m-4">Passions</h2>
+			<p class="fs-3">Je possède 3 passions que je peux faire durant l'année mais pas tous en même temps car cela me prends beaucoup de temps dans ma vie comme : </p>
+			<br><br> 
+			<h2>I) Les voyages :</h2>
+			<p> J'aime bien voyagé pour apprendre de nouvelles cultures, regarder le paysage, pour sortir de ma zone de confort, pour rencontrter de nouvelles personnes... En avril 2023, j'ai eu la chance de partir en colonie de vacances en Grèce, j'ai visité plusieurs îles comme Santorin, Naxos, et j'ai finis mon voyage par Athènes. Voici 3 couchers de soleil magnifiques de là-bas.</p>
+		 <div class="container-fluid mt-5">
+				<div class="row">
+					<div class="col-3">
+						<img src="img/coucher_de_soleil.jpg" class="img-fluid img-thumbnail" alt="1er coucher de soleil de Grèce"/>
+						<p> Ce coucher de soleil vient de l'île de Santorin à Oia. Les bateaux au loin rend cette photo encore plus magnifique</p>
+					</div>
+					<div class="col-3">
+						<img src="img/coucher_de_soleil2.jpg" class="img-fluid img-thumbnail" alt="2ème coucher de soleil de Grèce"/>
+						<p> Ce coucher de soleil vient aussi de l'île de Santorin à Oia, elle a été prise dans un autre point de vue avec le moulin à droite qui rend cette photo différente de la première.</p> 
+					</div>
+					<div class="col-3">
+						<img src="img/coucher_de_soleil1.jpg" class="img-fluid img-thumbnail" alt="3ème coucher de soleil de Grèce"/>
+						<p> Ce coucher de soleil n'est pas de l'île de Santorin mais d'une autre île, celle de Naxos.</p>
+					</div>
+						<p class="fs-3"> Ma deuxième passion est : </p>
+						<h2> II) La moto cross :</h2>
+							<p> J'ai appris à faire de la moto cross sur 125 YZ en colonie de vacances il y a 8 ans environ sur circuit, dans un premier temps, j'ai appris déjà a utiliser la moto puis dans un second temps, 	j'ai appris à faire des roues arrières (wheeling), à se lever sur la moto ect, j'ai beaucoup aimé cette colo. Et cette été (été 2023) pendant 20 jours, j'ai eu l'occasion de refaire colonie de vacances avec le thème Moto Cross sur Amiens. Si vous voulez voir des vidéos 
+												<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#video_moto_cross">
+									cliquez ici
+								</button>
+					
+								<!-- Modal -->
+								<div class="modal fade" id="video_moto_cross" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">videos moto cross</h1>										
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+												<div class="modal-body">
+													<video controls width="450" height="350" >
+														<source src="img/video_moto_cross.webm" type="video/webm" />
+														<source src="img/video_moto_cross.mp4" type="video/mp4" />
 
+
+													</video>
+													<video controls width="450" height="350" >
+														<source src="img/video_moto_cross1.webm" type="video/webm" />
+														<source src="img/video_moto_cross1.mp4" type="video/mp4" />
+
+													</video>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+										</div>
+									</div>
+								</div>
+							</p>
+	
+					<div class="col-3">
+						<img src="img/moto_cross2.jpg" class="img-fluid img-thumbnail" alt="moto cross"/>
+						</div>
+					<div class="col-3">
+						<img src="img/moto_cross1.jpg" class="img-fluid img-thumbnail" alt="moto cross1"/>
+					</div>
+					<div class="col-3">
+						<img src="img/moto_cross.jpg" class="img-fluid img-thumbnail" alt="tete de Quentin en tenue de moto cross"/>
+					</div>
+							
+					<p> Durant cette colonie de vacances, on a fait 3 différents circuits plus ou moins compliqué :
+						on a fait 2 circuits plutôt facile selon moi et le dernier circuit qui était plus difficile car déjà c'était un circuit de compétition de moto cross donc il y avais plus de montées et de descentes avec des bosses en plus 
+						<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#video_circuit_difficile">
+									cliquez ici si vous voulez voir la vidéo du circuit plus difficile
+								</button>
+					
+								<!-- Modal -->
+								<div class="modal fade" id="video_circuit_difficile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">video sur le circuit le plus difficile selon moi :</h1>										
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+												<div class="modal-body">
+													<video controls width="450" height="350" >
+														<source src="img/video_circuit_difficile.webm" type="video/webm" />
+														<source src="img/video_circuit_difficile.mp4" type="video/mp4" />
+													</video>
+													<p class="text-black">PS : Cette vidéo est libre de droit</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+										</div>
+									</div>
+								</div>
+							
+					</p>
+						<h2> III) La plongée sous marine :</h2>
+						<p> J'ai appris à faire de la plongée en colonie de vacances en Corse pendant 2 semaines où j'ai passé mon niveau 1 de plongée en aout 2022
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#niveau1">
+									Caractéristiques du niveau 1 
+								</button>
+					
+								<!-- Modal -->
+								<div class="modal fade" id="niveau1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-scrollable"> 
+										<div class="modal-content">
+											<div class="modal-header">
+
+												<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Caractéristiques du Niveau 1 :</h1>										
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+												<div class="modal-body">
+													<p class="text-black">Il donne accès aux plongées jusqu'à 20m de profondeur ENCADREE AVEC UN MONITEUR, et c'est à cette profondeur que l'on trouve les paysages les plus colorés suivant les endroits où on se trouve bien entendu.<br> Pour avoir le niveau 1, il faut : <br><br>PREPARATION de la plongée <br><br> ➜ savoir s'équiper avant d'aller en plongée <br> ➜ savoir se déséquipé après la plongée <br> ➜ comprendre le brief de son encadrant <br><br> Sécurité <br><br> ➜ Se mettre et sortir de l'eau <br>➜ S'immerger et retourner en surface en sécurité <br> ➜ Savoir se comporter en palanquée (à plusieurs = par groupe) à 20 m <br>➜ Réaliser des gestes techniques (vider son masque, enlever/remettre son détendeur,...) <br> ➜ Évoluer dans l'eau en respectant l'environnement (la faune et la flore) <br>➜ Communiquer avec son encadrant (en faisant des gestes dans l'eau) <br> ➜ Servir de relais à son encadrant auprès d'un équipier en difficulté de la palanquée <br><br> CONNAISSANCES théoriques <br><br>➜  Il faut avoir connaissances théoriques minimales pour comprendre le milieu dans lequel on évolue et plonger en sécurité <br><br>
+													A l'issue de la formation, il faut faire valider 4 plongées en milieu naturel (mer ou lac) par un moniteur FFESSM. <br><br> La FFESSM est la 
+													<a href="https://ffessm.fr/#:~:text=F%C3%A9d%C3%A9ration%20Fran%C3%A7aise%20d'%C3%89tudes%20et%20de%20Sports%20Sous%2DMarins" target="_blank">Fédération Française d'Études et de Sports Sous-Marins. </a>
+																					
+												</div>
+												<a href="fichier/formation_cursus_N1.pdf" target="_blank"> Documentation technique officielle pour la formation de niveau 1</a> </p>			
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+										</div>
+									</div>
+								</div>
+						 <p>et depuis cette colo je n'ai jamais décrocher la plongée sous marine car j'aime ça ! En septembre 2022 je me suis inscrit dans un club de plongée à Villeurbanne avec mon père. C'est une activité que je pratique en famile avec mon père quand cela est possible bien entendu. Tous les lundis nous sommes en séance de piscine pour nous entraîner à nager avec des palmes , faire de l'apnée et faire des exercices avec des bouteilles où nous pouvons aller à 4m de profondeur maximum. Ces exercices nous servent a s'améliorer pour passer notre niveau 2. </p>
+						<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#niveau2">
+									Caractéristiques du niveau 2
+								</button>
+					
+								<!-- Modal -->
+								<div class="modal fade" id="niveau2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-scrollable">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Caractéristiques du Niveau 2 :</h1>										
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+												<div class="modal-body">
+													<p class="text-black"> Il donne accès aux plongées de 40m de profondeur ENCADREE AVEC UN MONITEUR et en autonomie à 20m (en autonomie c'est avec une palanquée = groupe de 2 voir 3 plongeurs de niveau 2 ou plus MAXIMUM). <br> Pour avoir le niveau 2, il faut : <br><br> PREPARATION de la plongée <br><br>¨PLONGEE ENCADREE à 40m (PE40) <br> ➜ Vérifier son matériel <br>➜ Lire les informations sur son ordinateur de plongée<br>➜ Comprendre le brief de son encadrant <br><br> PLONGÉE AUTONOME À 20 M (PA20)<br>➜  Vérifier le matériel de ses équipiers (de sa palanquée)<br>➜  Utiliser son ordinateur de plongée PERSONEL ET PAS CELUI DE SON COLLEGUE !!! <br>➜  Planifier sa plongée avec ses équipiers de sa palanquée <br><br> AUTONOMIE ET SÉCURITÉ dans l’eau <br><br>Maîtriser sa ventilation et sa stabilisation à toute profondeur, lors de la remontée et au palier.<br><br>PLONGÉE ENCADRÉE À 40 M (PE40)<br>➜ Savoir se comporter en palanquée à 40 m<br>➜ Communiquer avec son encadrant<br>➜ Maintenir en sécurité un équipier en difficulté en relais de son encadrant<br><br>AUTONOMIE ET SÉCURITÉ dans l’eau<br><br>PLONGÉE AUTONOME À 20 M (PA20)<br>➜ Communiquer avec ses équipiers<br>➜ Gérer collectivement la sécurité de sa palanquée, porter assistance aux équipiers en difficulté de sa palanquée <br>➜ S’orienter et retrouver le bateau<br>➜ Remonter en gérant sa désaturation<br><br>CONNAISSANCES théoriques<br>Connaître la réglementation et être un plongeur responsable<br><br>PLONGÉE ENCADRÉE À 40 M (PE40)<br>➜ Comprendre le milieu à 40 m et prévenir les risques liés à la profondeur<br>➜ Lire son ordinateur de plongée<br><br>PLONGÉE AUTONOME À 20 M (PA20)<br>➜ Comprendre le milieu à 20 m et prévenir les risques liés à l’autonomie<br>➜ Choisir son matériel et utiliser son ordinateur de plongée PERSONEL<br><br> Durée suggérée de formation en milieu naturel :<br>➜  PE 40 : entre 3 et 4 plongées<br>➜  PA 20 : entre 7 et 8 plongées
+												</div>
+												<a href="fichier/formation_cursus_N2.pdf" target="_blank"> Documentation technique officielle pour la formation de niveau 2</a></p>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+										</div>
+									</div>
+								</div>
+						<p>A part les séances de plongées entre novembre et mars nous faisons quelques séances de fosse à Meyzieu pour descendre jusqu'à 20m et faire des exercices qui nous servent en mer. Faire des exercices de personnes en difficulté en mer par exemple : doner d el'air a quelqu'un, faire des remontées assistées ect a developper </p>
+						
+						
+				</div>
+		</div>
+	</div>
+		<div id="contact" class="mt-5"> 
+			<h2>Contact</h2>
+				<p class="bi bi-house-door"> Adresse<br>50 impasse des Joncs, Chassagny 69700 Beauvallon</p>
+				<p class="bi bi-envelope"> E-Mail <br> quentinlogioco@gmail.com</p>
+				<p> Telephone <br> 06 51 11 63 19</p>
+				<p> contact the author of this page :</p> 
+			<address> 
+				<a href="mailto:quentinlogioco@gmail.com">quentinlogioco@gmail.com</a><br>
+				<a href="tel:+33651116319">06 51 11 63 19</a>
+			</address>
+		</div>
+</div>
 	</body>
 </html>
