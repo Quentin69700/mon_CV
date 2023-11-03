@@ -13,31 +13,35 @@
 		<!-- Fond noir et texte en blanc -->
 	<body style="background-color:#000;" class="text-white"> 
 	<!-- Menu avec boutons pour appuyer sur la page -->
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">  
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar fixed-top" id="navbar-example2">  
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><B>Quentin Lo Gioco</B></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
 			<div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav nav-pills">
 					<li class="nav-item mx-2">
-						<a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+						<a class="nav-link" aria-current="page" href="#accueil">Accueil</a>
 					</li>
-					<li class="nav-item mx-3">
+					<li class="nav-item mx-2">
 						<a class="nav-link"  aria-current="page" href="#mon_parcours">Mon parcours</a>
 					</li>
-					<li class="nav-item mx-3">
-						<a class="nav-link"  aria-current="page" href="#diplomes_formations">Diplômes et Formations</a>
+					<li class="nav-item mx-2">
+						<a class="nav-link"  aria-current="page" href="#diplomes">Diplômes</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item mx-2">
+						<a class="nav-link"  aria-current="page" href="#formations">Formations</a>
+					</li>
+					<li class="nav-item mx-2">
 						<a class="nav-link" aria-current="page" href="#passions">Passions</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#contact">Contact</a>
+					<li class="mx-2">
+					 	
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>		<!-- colonne pour mettre le texte de présentation + image en face de moi -->
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-p-3 rounded-2" tabindex="0">
 	<div class="container-fluid mt-5">
 		<div class="row">
 			<div class="col-4 sm" id="accueil">
@@ -51,54 +55,27 @@
 		</div>
 	</div>
 	<br><br><br><br>
-	
-		<div id="mon_parcours" class="fs-5 container-fluid"> 
-			<h2 class="m-4">Mon parcours</h2>
+						<!-- Mettre en colonne le thème mon parcours -->
+	<div id="mon_parcours" class="fs-5 container-fluid"> 
+		<h2 class="m-4">Mon parcours</h2>
 			<div class="row">
 				<div class="col-6 ">
 					<p>En primaire j'étais à l'école de Chassagny : La Rose des Vents</p> 
 					<!-- Button trigger modal -->
 					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ecole_la_rose_des_vents">
-						<p>Localisation de l'école</p>
-						</button>
-
-					<!-- Modal -->
-				<div class="modal fade" id="ecole_la_rose_des_vents" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Ecole : La Rose Des Vents de Chassagny</h1>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5582.454018454574!2d4.720923900304554!3d45.606081870435624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4e45acaea60eb%3A0xd14fe2d100073441!2sLa%20Rose%20des%20vents!5e0!3m2!1sfr!2sfr!4v1697570942940!5m2!1sfr!2sfr" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-				</div>
-					<br><img src="img/ecole_la_rose_des_vents.jpeg" class="img-fluid img-thumbnail" alt="Ecole La Rose des Vents"/> 
-				</div>
-				<div class="col-6 ">
-					<p>Au collège j'étais à Soucieu en Jarrest : <a href="https://laperriere-soucieuenjarrest.ent.auvergnerhonealpes.fr/" target="_blank">La Perrière</a></p>
-					
-							<!-- Button trigger modal -->
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#college_la_perriere">
-						<p>Localisation du collège</p>
+						Localisation de l'école
 					</button>
-
+					
 					<!-- Modal -->
-					<div class="modal fade" id="college_la_perriere" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal fade" id="ecole_la_rose_des_vents" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 						<div class="modal-dialog">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Collège La Perrière à Soucieu en jarrest </h1>
+									<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Ecole : La Rose Des Vents de Chassagny</h1>										
 									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.7689359073643!2d4.694355676293941!3d45.6755387710783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4efdd6979bc71%3A0x67a65e84392a0d3a!2sCollege%20la%20Perri%C3%A8re!5e0!3m2!1sfr!2sfr!4v1697572998658!5m2!1sfr!2sfr" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									<iframe src "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5582.454018454574!2d4.720923900304554!3d45.606081870435624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4e45acaea60eb%3A0xd14fe2d100073441!2sLa%20Rose%20des%20vents!5e0!3m2!1sfr!2sfr!4v1697570942940!5m2!1sfr!2sfr" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -106,19 +83,67 @@
 							</div>
 						</div>
 					</div>
-					
+					<br><img src="img/ecole_la_rose_des_vents.jpeg" class="img-fluid img-thumbnail" alt="Ecole La Rose des Vents"/> 
+				</div>
+				<div class="col-6 ">
+					<p>Au collège j'étais à Soucieu en Jarrest : <a href="https://laperriere-soucieuenjarrest.ent.auvergnerhonealpes.fr/" target="_blank">La Perrière</a></p>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#college_la_perriere">
+						Localisation du collège
+					</button>
+
+					<!-- Modal -->
+						<div class="modal fade" id="college_la_perriere" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Collège La Perrière à Soucieu en jarrest </h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.7689359073643!2d4.694355676293941!3d45.6755387710783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4efdd6979bc71%3A0x67a65e84392a0d3a!2sCollege%20la%20Perri%C3%A8re!5e0!3m2!1sfr!2sfr!4v1697572998658!5m2!1sfr!2sfr" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>		
 					<img src="img/college_soucieu.jpg" class="img-fluid img-thumbnail" alt="Collège La Perrière"/> <br><br><br><br>
 				</div>
-				
-				<div class="col-6 "> Stage de 3ème dans l'Opérateur Informatique et & Telecom (ENEDIS/GRDF)<br>
-				<a href="stage_3eme.pdf" target="_blank">Voici ma présentation du stage de 3ème</a> 
+				<div class="col-6 "> <p>Stage de 3ème dans l'Opérateur Informatique et & Telecom (ENEDIS/GRDF)<br> J'avais 14 ans quand j'avais fait ce stage.</p>
+					
+										<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#stage_3eme">
+						Localisation du stage de 3ème
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="stage_3eme" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h1 class="modal-title fs-5 text-black" id="exampleModalLabel"> Stage de 3ème</h1>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.4762045319785!2d4.8588954767367705!3d45.76164591354285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea7d533db6a3%3A0xbdc929fa78511f34!2s26%20Rue%20de%20la%20Villette%2C%2069003%20Lyon!5e0!3m2!1sfr!2sfr!4v1697842109754!5m2!1sfr!2sfr" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="fichier/stage_3eme.pdf" target="_blank">Voici ma présentation du stage de 3ème</a> <br>
+					<img src="img/oit_stage1.png" class="img-fluid img-thumbnail" alt="OIT stage 3eme"/> 
 				</div>
 				<div class="col-6 "> 
 					<p>Au lycée j'étais à Givors : <a href="https://aragon-picasso.ent.auvergnerhonealpes.fr/" target="_blank">Lycée Polyvalent Aragon-Picasso</a><br> En 1ère je suis passé dans la filière technologique (STI2D) et en Terminal j'ai choisi l'option SIN car je voudrais faire mes études supérieurs dans l'informatique donc comme ça j'aurai des bases pour la suite de mes études</p>
 							
 							<!-- Button trigger modal -->
 					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lycee_givors">
-						<p>Localisation du lycée</p>
+						Localisation du lycée
 					</button>
 
 					<!-- Modal -->
@@ -130,7 +155,7 @@
 									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.4348972085527!2d4.757833076582684!3d45.60190372423986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4e420a2db430d%3A0xc7ee2501d3b16838!2sLyc%C3%A9e%20Polyvalent%20Aragon-Picasso!5e0!3m2!1sfr!2sfr!4v1697808826016!5m2!1sfr!2sfr" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.4348972085527!2d4.757833076582684!3d45.60190372423986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4e420a2db430d%3A0xc7ee2501d3b16838!2sLyc%C3%A9e%20Polyvalent%20Aragon-Picasso!5e0!3m2!1sfr!2sfr!4v1697808826016!5m2!1sfr!2sfr" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -138,66 +163,424 @@
 							</div>
 						</div>
 					</div>
+						<img src="img/lycee_givors.jpg" class="img-fluid img-thumbnail" alt="Lycée Aragon-Picassode Givors"/> 
+				</div>
+			</div>
+	</div>
+		<br>
+	<table class="table table-dark table-striped table-responsive sm table-bordered fs-5">
+		<thead>
+			<th scope="col">Langues en cours d'apprentissages : </th>
+			<th scope="col" class="text-center">Français</th>
+			<th scope="col" class="text-center">Anglais</th>
+			<th scope="col" class="text-center">Italien</th>
+		</thead>
+		<tbody class="table-group-divider">
+			<tr>
+				<th scope="row">Pourquoi je l'ai choisi ?</th>
+				<td>C'est ma langue maternelle</td>
+				<td>Car pour mes études supérieures j'en aurai besoin donc ça m'arrange que cette langue est obligatoire </td>
+				<td>J'ai des origines italiennes et je voulais apprendre la culture italienne car cela m'interesse énormément</td>
+			</tr>
+			<tr>
+				<th scope="row">Depuis quand ?</th>
+				<td>Depuis mon plus jeune âge</td>
+				<td>Depuis la primaire</td>
+				<td>Depuis la 5ème</td>
+			</tr>
+   		</tbody>
+	</table>
 		
-				<img src="img/lycee_givors.jpg" class="img-fluid img-thumbnail" alt="Lycée Aragon-Picassode Givors"/> 
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-							</div>
-						</div>
+	<div id="diplomes" class="mt-5"> 
+		<h2 class="m-4 bi bi-mortarboard-fill"> Diplômes</h2>
+			<div class="container-fluid mt-5">
+				<div class="row">
+					<div class="col-4">
+						<img src="img/ASSR.jpg" class="img-fluid img-thumbnail" alt="ASSR logo"/><br><br>
+					</div>
+					<div class="col-8">
+						<br><br><br><br>
+						<p class="fs-5 text-center"> A l'âge de 14ans donc en classe de 5ème, j'ai passé mon ASSR1 et je l'ai réussi. Et à l'âge de 16ans donc en classe de 3ème, j'ai passé mon ASSR2 et je l'ai réussi aussi.</p><br> 	
+					</div>
+					<div class="col-4">
+						<img src="img/brevet1.jpg" class="img-fluid img-thumbnail" alt="Diplôme brevet"/>
+					</div>
+					<div class="col-8">
+						<br><br><br><br><br><br>
+						<p class="fs-5 text-center"> A l'âge de 16ans aussi donc toujours en classe de 3ème mais l'a a la fin de cette année scolaire j'ai passé le brevet et j'ai eu mention bien.</p>
+					</div>	
+					
+					<div class="col-4">
+						<br><img src="img/bac_francais.jpg" class="img-fluid img-thumbnail" alt="logo bac de français"/><br><br>
+					</div>
+					<div class="col-8">
+						<br><br><br><br><br>
+						<p class="fs-5 text-center"> Pour le bac de français en 1ère a été très difficile car on avait pas de professeur de français, on a du se débrouiller tout seul, à l'oral j'ai pu avoir 14/20 mais à l'écrit j'ai pu avoir que 10/20 donc bon, ma moyenne de bac de français de 2022 est de 12/20.</p><br>
+					</div> 	
+					<div class="col-4">
+						<img src="img/bac_technologique.jpg" class="img-fluid img-thumbnail" alt="Diplôme bac technologique"/>
+					</div>
+					<div class="col-8">
+						<br><br><br><br><br><br>
+						<p class="fs-5 text-center">Est ce que j'aurai mon bac de STI2D à la fin de cette année ? <br> Par rapport au contrôle continue c'est déjà bien parti car l'année dernière j'avais eu 16,34 de moyenne générale de l'année avec 16,71 de moyenne dans la matière Ingénieurie et Développelent Durable, 15,53 en Mathématiques et 17,04 en Physique-Chimie.</p>
+					</div>	
+					
+					<br><br>
+					<h2 id="formations" class="mt-5 m-4"> Formations</h2>
+					<div class="col-3">
+							<img src="img/logo_secouristes1.1.jpg" class="img-fluid img-thumbnail" alt="logo secouristes asso"/>
+					</div>
+					<div class="col-4">
+						<img src="img/poste_de_secours.jpeg" class="img-fluid img-thumbnail" alt="poste de secours"/><br><br>
+					</div>
+					<div class="col-5 fs-3">
+						<br><br><br><br>
+						<p class="fs-5 text-center"> Début 2018, je suis rentré dans une association de secouristes pour passer mon PSC1 en tant que mini secouriste et je suis resté 2 ans dans cette association en faisant des postes de secours, les défilés, les cérémonies ect. Ce lien est le <a href="https://www.croixblanche69.org/associations-du-rhone/saint-genis-laval/" target="_blank">site de l'association de Saint-Genis-Laval</a> qui permettra soit de vous inscrire à une formation soit même à vous inscrire dans cette assocation pour sauver des vies dans différents postes de secours.</p><br> 
+					</div>		
+					<div class="col-3">
+						<img src="img/psc1.jpg" class="img-fluid img-thumbnail" alt="psc1"/> 
+					</div>	
+					<div class="col-3">
+						<img src="img/psc1_1.png" class="img-fluid img-thumbnail" alt="psc1"/>
+					</div>	
+					<div class="col-6">
+						<br><br><br>
+						<p class="fs-5 text-center"> J'ai passé le PSC1 fin de 2018 car on a un an de formations avec des regroupements de plusieurs weekend durant l'année et là ce que je vais faire c'est de me faire recycler car cela fait trop longtemps que je n'ai pas pratiqué donc je suis moins performant qu'avant. Faites la même chose que moi, passer votre PSC1 car si jamais quelqu'un de votre famille a un problème alors vous pourriez l'aider et sauver sa vie !</p>
+					</div>
+					<div class="col-2">
+						<br>
+						<img src="img/code_de_la_route.png" class="img-fluid img-thumbnail" alt="image code de la route"/>
+					</div>
+					<div class="col-10">
+						<br><br><br><br>
+						<p class="fs-5"> J'ai passé mon Code de la route en 2023, après j'ai passé mes 20h de conduite pour apprendre à conduire et là depuis le 15 mars je suis en conduite accompagnée, je dois faire 3 000km en une année donc je passe mon permis en mars 2024 si tout va bien.<br>
+							<a href="fichier/resultat_code_de_la_route.pdf" target="_blank">Résultat du code de la route</a></p> <br>
 					</div>
 				</div>
-				</div>
 			</div>
-		</div>
-		<br>
-		<table class="table table-dark table-striped table-responsive sm table-bordered">
-			<thead>
-				<th scope="col">Langues en cours d'apprentissages : </th>
-				<th scope="col" class="text-center">Français</th>
-				<th scope="col" class="text-center">Anglais</th>
-				<th scope="col" class="text-center">Italien</th>
-			</thead>
-				<tbody class="table-group-divider">
-				<tr>
-					<th scope="row">Pourquoi je l'ai choisi ?</th>
-					<td>C'est ma langue maternelle</td>
-					<td>Car pour mes études supérieures j'en aurai besoin donc ça m'arrange que cette langue est obligatoire </td>
-					<td>J'ai des origines italiennes et je voulais apprendre la culture italienne car cela m'interesse énormément</td>
-				</tr>
-					<tr>
-						<th scope="row">Depuis quand ?</th>
-						<td>Depuis mon plus jeune âge</td>
-						<td>Depuis la primaire</td>
-						<td>Depuis la 5ème</td>
-					</tr>
-    
-				</tbody>
-		</table>
-		
-	
-			<div id="diplomes_formations" class="mt-5"> 
-				<h2> Diplômes</h2>
-					<p> ASSR1 <br> ASSR2 <br>Brevet mention bien <br> Bac de français <br> Bac STI2D ?  </p>
-				<h2> Formations</h2>
-					<p> PSC1 en 2018<br> Code de la route en 2023<br> Conduite accompagnée en 2023 puis passage du permis en 2024</p>
-			</div>
-				<div id="passions"" class="mt-5"> 
-				<h2>Passions</h2>
-					<p>moto cross photos a mettre de moi sur la moto 
-						partie en voyage en Grèce avec coucher de soleil</p>
-				</div>
-		<div id="contact" class="mt-5"> 
-			<h2>Contact</h2>
-				<p class="bi bi-house-door"> Adresse<br>50 impasse des Joncs, Chassagny 69700 Beauvallon</p>
-				<p> E-Mail <br> quentinlogioco@gmail.com</p>
-				<p> Telephone <br> 06 51 11 63 19</p>
-				<p> contact the author of this page :</p> 
-				<address> 
-				<a href="mailto:quentinlogioco@gmail.com">quentinlogioco@gmail.com</a><br>
-				<a href="tel:+33651116319">06 51 11 63 19</a>
-				</address>
-		</div>
+	</div>
+	<div id="passions" class="mt-5"> 
+		<h2 class="mt-5 m-4">Passions</h2>
+			<p class="fs-3">Je possède 3 passions que je peux faire durant l'année mais pas tous en même temps car cela me prends beaucoup de temps dans ma vie comme : </p>
+			<br><br> 
+			<h2>I) Les voyages :</h2>
+			<p> J'aime bien voyagé pour apprendre de nouvelles cultures, regarder le paysage, pour sortir de ma zone de confort, pour rencontrter de nouvelles personnes... En avril 2023, j'ai eu la chance de partir en colonie de vacances en Grèce, j'ai visité plusieurs îles comme Santorin, Naxos, et j'ai finis mon voyage par Athènes. Voici 3 couchers de soleil magnifiques de là-bas.</p>
+		 <div class="container-fluid mt-5">
+				<div class="row">
+					<div class="col-3">
+						<img src="img/coucher_de_soleil.jpg" class="img-fluid img-thumbnail" alt="1er coucher de soleil de Grèce"/>
+						<p> Ce coucher de soleil vient de l'île de Santorin à Oia. Les bateaux au loin rend cette photo encore plus magnifique</p>
+					</div>
+					<div class="col-3">
+						<img src="img/coucher_de_soleil2.jpg" class="img-fluid img-thumbnail" alt="2ème coucher de soleil de Grèce"/>
+						<p> Ce coucher de soleil vient aussi de l'île de Santorin à Oia, elle a été prise dans un autre point de vue avec le moulin à droite qui rend cette photo différente de la première.</p> 
+					</div>
+					<div class="col-3">
+						<img src="img/coucher_de_soleil1.jpg" class="img-fluid img-thumbnail" alt="3ème coucher de soleil de Grèce"/>
+						<p> Ce coucher de soleil n'est pas de l'île de Santorin mais d'une autre île, celle de Naxos.</p>
+					</div>
+						<p class="fs-3"> Ma deuxième passion est : </p>
+						<h2> II) La moto cross :</h2>
+							<p> J'ai appris à faire de la moto cross sur 125 YZ en colonie de vacances il y a 8 ans environ sur circuit, dans un premier temps, j'ai appris déjà a utiliser la moto puis dans un second temps, 	j'ai appris à faire des roues arrières (wheeling), à se lever sur la moto ect, j'ai beaucoup aimé cette colo. Et cette été (été 2023) pendant 20 jours, j'ai eu l'occasion de refaire colonie de vacances avec le thème Moto Cross sur Amiens. Si vous voulez voir des vidéos 
+												<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#video_moto_cross">
+									cliquez ici
+								</button>
+					
+								<!-- Modal -->
+								<div class="modal fade" id="video_moto_cross" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">videos moto cross</h1>										
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+												<div class="modal-body">
+													<video controls width="450" height="350" >
+														<source src="img/video_moto_cross.webm" type="video/webm" />
+														<source src="img/video_moto_cross.mp4" type="video/mp4" />
 
+
+													</video>
+													<video controls width="450" height="350" >
+														<source src="img/video_moto_cross1.webm" type="video/webm" />
+														<source src="img/video_moto_cross1.mp4" type="video/mp4" />
+
+													</video>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+										</div>
+									</div>
+								</div>
+							</p>
+	
+					<div class="col-3">
+						<img src="img/moto_cross2.jpg" class="img-fluid img-thumbnail" alt="moto cross"/>
+						</div>
+					<div class="col-3">
+						<img src="img/moto_cross1.jpg" class="img-fluid img-thumbnail" alt="moto cross1"/>
+					</div>
+					<div class="col-3">
+						<img src="img/moto_cross.jpg" class="img-fluid img-thumbnail" alt="tete de Quentin en tenue de moto cross"/>
+					</div>
+							
+					<p> Durant cette colonie de vacances, on a fait 3 différents circuits plus ou moins compliqué :
+						on a fait 2 circuits plutôt facile selon moi et le dernier circuit qui était plus difficile car déjà c'était un circuit de compétition de moto cross donc il y avais plus de montées et de descentes avec des bosses en plus 
+						<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#video_circuit_difficile">
+									cliquez ici si vous voulez voir la vidéo du circuit plus difficile
+								</button>
+					
+								<!-- Modal -->
+								<div class="modal fade" id="video_circuit_difficile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">video sur le circuit le plus difficile selon moi :</h1>										
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+												<div class="modal-body">
+													<video controls width="450" height="350" >
+														<source src="img/video_circuit_difficile.webm" type="video/webm" />
+														<source src="img/video_circuit_difficile.mp4" type="video/mp4" />
+													</video>
+													<p class="text-black">PS : Cette vidéo est libre de droit</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+										</div>
+									</div>
+								</div>
+							
+					</p>
+						<h2> III) La plongée sous marine :</h2>
+						<p> J'ai appris à faire de la plongée en colonie de vacances en Corse pendant 2 semaines où j'ai passé mon niveau 1 de plongée en aout 2022
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#niveau1">
+									Caractéristiques du niveau 1 
+								</button>
+					
+								<!-- Modal -->
+								<div class="modal fade" id="niveau1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-scrollable"> 
+										<div class="modal-content">
+											<div class="modal-header">
+
+												<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Caractéristiques du Niveau 1 :</h1>										
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+												<div class="modal-body">
+													<p class="text-black">Il donne accès aux plongées jusqu'à 20m de profondeur ENCADREE AVEC UN MONITEUR, et c'est à cette profondeur que l'on trouve les paysages les plus colorés suivant les endroits où on se trouve bien entendu.<br> Pour avoir le niveau 1, il faut : <br><br>PREPARATION de la plongée <br><br> ➜ savoir s'équiper avant d'aller en plongée <br> ➜ savoir se déséquipé après la plongée <br> ➜ comprendre le brief de son encadrant <br><br> Sécurité <br><br> ➜ Se mettre et sortir de l'eau <br>➜ S'immerger et retourner en surface en sécurité <br> ➜ Savoir se comporter en palanquée (à plusieurs = par groupe) à 20 m <br>➜ Réaliser des gestes techniques (vider son masque, enlever/remettre son détendeur,...) <br> ➜ Évoluer dans l'eau en respectant l'environnement (la faune et la flore) <br>➜ Communiquer avec son encadrant (en faisant des gestes dans l'eau) <br> ➜ Servir de relais à son encadrant auprès d'un équipier en difficulté de la palanquée <br><br> CONNAISSANCES théoriques <br><br>➜  Il faut avoir connaissances théoriques minimales pour comprendre le milieu dans lequel on évolue et plonger en sécurité <br><br>
+													A l'issue de la formation, il faut faire valider 4 plongées en milieu naturel (mer ou lac) par un moniteur FFESSM. <br><br> La FFESSM est la 
+													<a href="https://ffessm.fr/#:~:text=F%C3%A9d%C3%A9ration%20Fran%C3%A7aise%20d'%C3%89tudes%20et%20de%20Sports%20Sous%2DMarins" target="_blank">Fédération Française d'Études et de Sports Sous-Marins. </a>
+																					
+												</div>
+												<a href="fichier/formation_cursus_N1.pdf" target="_blank"> Documentation technique officielle pour la formation de niveau 1</a> </p>			
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+										</div>
+									</div>
+								</div>
+						 <p>et depuis cette colo je n'ai jamais décrocher la plongée sous marine car j'aime ça ! En septembre 2022 je me suis inscrit dans un club de plongée à Villeurbanne avec mon père. C'est une activité que je pratique en famile avec mon père quand cela est possible bien entendu. Tous les lundis nous sommes en séance de piscine pour nous entraîner à nager avec des palmes , faire de l'apnée et faire des exercices avec des bouteilles où nous pouvons aller à 4m de profondeur maximum. Ces exercices nous servent a s'améliorer pour passer notre niveau 2. </p>
+						<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#niveau2">
+									Caractéristiques du niveau 2
+								</button>
+					
+								<!-- Modal -->
+								<div class="modal fade" id="niveau2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-scrollable">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Caractéristiques du Niveau 2 :</h1>										
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+												<div class="modal-body">
+													<p class="text-black"> Il donne accès aux plongées de 40m de profondeur ENCADREE AVEC UN MONITEUR et en autonomie à 20m (en autonomie c'est avec une palanquée = groupe de 2 voir 3 plongeurs de niveau 2 ou plus MAXIMUM). <br> Pour avoir le niveau 2, il faut : <br><br> PREPARATION de la plongée <br><br>¨PLONGEE ENCADREE à 40m (PE40) <br> ➜ Vérifier son matériel <br>➜ Lire les informations sur son ordinateur de plongée<br>➜ Comprendre le brief de son encadrant <br><br> PLONGÉE AUTONOME À 20 M (PA20)<br>➜  Vérifier le matériel de ses équipiers (de sa palanquée)<br>➜  Utiliser son ordinateur de plongée PERSONEL ET PAS CELUI DE SON COLLEGUE !!! <br>➜  Planifier sa plongée avec ses équipiers de sa palanquée <br><br> AUTONOMIE ET SÉCURITÉ dans l’eau <br><br>Maîtriser sa ventilation et sa stabilisation à toute profondeur, lors de la remontée et au palier.<br><br>PLONGÉE ENCADRÉE À 40 M (PE40)<br>➜ Savoir se comporter en palanquée à 40 m<br>➜ Communiquer avec son encadrant<br>➜ Maintenir en sécurité un équipier en difficulté en relais de son encadrant<br><br>AUTONOMIE ET SÉCURITÉ dans l’eau<br><br>PLONGÉE AUTONOME À 20 M (PA20)<br>➜ Communiquer avec ses équipiers<br>➜ Gérer collectivement la sécurité de sa palanquée, porter assistance aux équipiers en difficulté de sa palanquée <br>➜ S’orienter et retrouver le bateau<br>➜ Remonter en gérant sa désaturation<br><br>CONNAISSANCES théoriques<br>Connaître la réglementation et être un plongeur responsable<br><br>PLONGÉE ENCADRÉE À 40 M (PE40)<br>➜ Comprendre le milieu à 40 m et prévenir les risques liés à la profondeur<br>➜ Lire son ordinateur de plongée<br><br>PLONGÉE AUTONOME À 20 M (PA20)<br>➜ Comprendre le milieu à 20 m et prévenir les risques liés à l’autonomie<br>➜ Choisir son matériel et utiliser son ordinateur de plongée PERSONEL<br><br> Durée suggérée de formation en milieu naturel :<br>➜  PE 40 : entre 3 et 4 plongées<br>➜  PA 20 : entre 7 et 8 plongées
+												</div>
+												<a href="fichier/formation_cursus_N2.pdf" target="_blank"> Documentation technique officielle pour la formation de niveau 2</a></p>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+										</div>
+									</div>
+								</div>
+						<p>A part les séances de plongées entre novembre et mars nous faisons quelques séances de fosse à Meyzieu pour descendre jusqu'à 20m de profondeur et faire des exercices qui nous servent en mer. Faire des exercices de personnes en difficulté par exemple : doner de l'air a quelqu'un, faire des remontées controlées assistées ect.  A partir d'Avril nous avons les premieres sorties en mer comme par exemple en Avril 2023, nous sommes allés à Saint-Raphaël pour faire de la plongée sous marine en mer, l'eau était à 13°C donc je peux vous le dire qu'elle était froide </p>
+						
+			<div class="container-fluid mt-5">
+				<div class="row">
+					<div class="col-3">
+						<img src="img/plongee_moi.jpg" class="img-fluid img-thumbnail" alt="Ma tenue de plongée sous l'eau"/>
+						
+					</div>
+					<div class="col-6">
+							<video controls width="800" height="600" >
+									<source src="img/moi_plongee.webm" type="video/webm" />
+							</video>
+					</div>
+					<div class="col-3"
+					<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#video_poissons">
+									Si vous voulez voir des vidéos de poissons cliquez-ici
+								</button>
+					
+								<!-- Modal -->
+								<div class="modal fade" id="video_poissons" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-scrollable">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Vidéos poissons</h1>										
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+												<div class="modal-body text-black">
+													<video controls width="450" height="350" >
+														<source src="img/plongee.webm" type="video/webm" />
+													</video>
+													<video controls width="450" height="350" >
+														<source src="img/plongee1.webm" type="video/webm" />
+														
+													</video>
+													<video controls width="450" height="350" >
+														<source src="img/plongee-2.webm" type="video/webm" />
+													</video>
+													<video controls width="450" height="350" >
+														<source src="img/plongee3.webm" type="video/webm" />
+													</video>
+													<p> Sur ces 4 vidéos, nous voyons un mérou brun.</p>
+													<video controls width="450" height="350" >
+														<source src="img/plongee4.webm" type="video/webm" />
+													</video>
+													<video controls width="450" height="350" >
+														<source src="img/plongee5.webm" type="video/webm" />
+													</video>
+													<p> Sur ces 2 vidéos, nous voyons un poulpe.</p>
+													<video controls width="450" height="350" >
+														<source src="img/plongee6.webm" type="video/webm" />
+													</video>
+													<p> Sur cette vidéo, nous voyons une murène.</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+										</div>
+									</div>
+								</div>
+					</div>
+				
+			
+						<p> A partir de juin nous avons les premieres sorties au <a href="https://www.chamagnieuplongee.com/" target="_blank">lac de Chamagnieu</a> ce qui permet de faire des exercices avec de l'eau plus trouble donc avec de vraie conditions qu'on pourrait avoir en mer. Fin août 2023, nous sommes partis à Saint-Raphaël (Le Dramont) pour faire de la plongée pendant 1 semaine chaque jour : le matin et l'apres-midi suivant les pertubations de la mer et j'ai aussi fait ma première plongée de nuit.
+						<div class="col-3">
+							<video controls width="450" height="350" >
+								<source src="img/plongee_nuit.webm" type="video/webm" />
+							</video>
+						</div>
+						<div class="col-3">
+							<video controls width="450" height="350" >
+								<source src="img/plongee_nuit1.webm" type="video/webm" />
+							</video>
+						</div>
+				</div>
+			</div>
+						<p> On peut aussi voir des épaves à partir de 40m de profondeur.
+						<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#video_epave">
+									Si vous voulez voir des vidéos d'une épave d'avion cliquez-ici
+								</button>
+					
+								<!-- Modal -->
+								<div class="modal fade" id="video_epave" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-scrollable">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Vidéos épave d'un avion</h1>										
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+												<div class="modal-body text-black">
+													<video controls width="450" height="350" >
+														<source src="img/epave.webm" type="video/webm" />
+													</video>
+													<video controls width="450" height="350" >
+														<source src="img/epave2.webm" type="video/webm" />
+														
+													</video>
+													<video controls width="450" height="350" >
+														<source src="img/epave3.webm" type="video/webm" />
+													</video>
+													<iframe width="450" height="350" src="https://www.youtube.com/embed/otjelrbC2uI?si=ehNanxQ5c_iFd0M2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+													<video controls width="450" height="350" >
+														<source src="img/epave5.webm" type="video/webm" />
+													</video>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+										</div>
+									</div>
+								</div>
+							<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#video_dramont_2023">
+									Vidéos de la sortie en mer de Saint Raphaël 2023
+								</button>
+					
+								<!-- Modal -->
+								<div class="modal fade" id="video_dramont_2023" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Saint-Raphaël Le dramont 2023</h1>										
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+												<div class="modal-body">
+													<iframe width="450" height="350" src="https://www.youtube.com/embed/dEmdKY8cJ_I?si=bnXYdHRZa-olCFTz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+													<iframe width="450" height="350" src="https://www.youtube.com/embed/R5G96tu9rKE?si=Vrcvk2zeyCBEiHgz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>	
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+										</div>
+									</div>
+								</div>
+						Et suivant les destinations nous pouvons faire des voyages comme aller en Egypte, aux maldives, en Italie ect durant l'année.</p>
+				</div>
+		</div>
+	</div>
+			<div>
+			<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contacter">
+									Me contacter
+								</button>
+					
+								<!-- Modal -->
+								<div class="modal fade" id="contacter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Me contacter</h1>										
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+												<div class="modal-body text-black">
+													<div class="mt-1">
+														<p>Une question, une précision sur un sujet évoquant sur mon CV, n'hésitez pas a me contacter !</p>
+															<div id="contact" class="mt-5"> 
+																<address> 
+																	<h3 class="bi bi-envelope-at-fill"> E-mail</h3> <p><a href="mailto:quentinlogioco@gmail.com">quentinlogioco@gmail.com</a></p>
+																	<h3 class="bi bi-telephone-inbound-fill"> Telephone</h3><p><a href="tel:+33651116319">06 51 11 63 19</a></p>
+																</address>
+																<h3 class="bi bi-house-door-fill"> Adresse</h3><p>50 impasse des Joncs, Chassagny 69700 Beauvallon</p>
+																<p> Nationalité : Française</p>
+															</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												</div>
+										</div>
+									</div>
+								</div>
+			</div>
 	</body>
 </html>
